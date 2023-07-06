@@ -1,5 +1,5 @@
 const pageUrls = {
-    home: "/home",
+    home: "/",
     shop: "/shop",
     product: "/shop/:id",
     busket: "/busket",
