@@ -1,0 +1,204 @@
+{
+    "shop": [
+        {
+            "id": 1,
+            "title": "Свитер ZARA",
+            "priceSale": 154,
+            "price": 270,
+            "image": {
+                "src": "/assets/images/shop/blousePink.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Блузка Pych",
+            "priceSale": 140,
+            "price": 235,
+            "image": {
+                "src": "/assets/images/shop/blouseWhite.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Пальто Zarina",
+            "priceSale": null,
+            "price": 460,
+            "image": {
+                "src": "/assets/images/shop/coatBeige.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 4,
+            "title": "Костюм ZARA",
+            "priceSale": 320,
+            "price": 410,
+            "image": {
+                "src": "/assets/images/shop/costumeGreen.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 5,
+            "title": "Костюм Clarie",
+            "priceSale": 350,
+            "price": 470,
+            "image": {
+                "src": "/assets/images/shop/costumeWhite.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 6,
+            "title": "Платье Zarina",
+            "priceSale": 110,
+            "price": 200,
+            "image": {
+                "src": "/assets/images/shop/dressBeige.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 7,
+            "title": "Платье ELLE",
+            "priceSale": 130,
+            "price": 250,
+            "image": {
+                "src": "/assets/images/shop/dressBlue.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 8,
+            "title": "Платье Meridiem",
+            "priceSale": null,
+            "price": 160,
+            "image": {
+                "src": "/assets/images/shop/dressWhite.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 9,
+            "title": "Платье LICHI",
+            "priceSale": 139,
+            "price": 180,
+            "image": {
+                "src": "/assets/images/shop/dressPink.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 10,
+            "title": "Пиджак Dallas",
+            "priceSale": 170,
+            "price": 240,
+            "image": {
+                "src": "/assets/images/shop/jacketBeige.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 11,
+            "title": "Джинсы Zara",
+            "priceSale": 80,
+            "price": 130,
+            "image": {
+                "src": "/assets/images/shop/jeansBlue.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 12,
+            "title": "Комбинезон Slim",
+            "priceSale": null,
+            "price": 223,
+            "image": {
+                "src": "/assets/images/shop/overallBlue.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 13,
+            "title": "Штаны TopDay",
+            "priceSale": 105,
+            "price": 170,
+            "image": {
+                "src": "/assets/images/shop/pantsBlack.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 14,
+            "title": "Шорты Dr Denim",
+            "priceSale": 123,
+            "price": 166,
+            "image": {
+                "src": "/assets/images/shop/shortsBlue.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 15,
+            "title": "Шорты LOVE",
+            "priceSale": 110,
+            "price": 155,
+            "image": {
+                "src": "/assets/images/shop/shortsWhite.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 16,
+            "title": "Свитшот Sweet Shot",
+            "priceSale": null,
+            "price": 129,
+            "image": {
+                "src": "/assets/images/shop/sweetShotWhite.png",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 17,
+            "title": "Купальник Glow",
+            "priceSale": null,
+            "price": 110,
+            "image": {
+                "src": "/assets/images/shop/swimsuit.png",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 18,
+            "title": "Футболка Over",
+            "priceSale": 100,
+            "price": 180,
+            "image": {
+                "src": "/assets/images/shop/tShirtBlack.jpg",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 19,
+            "title": "Футболка USA",
+            "priceSale": 129,
+            "price": 229,
+            "image": {
+                "src": "/assets/images/shop/tShirtUSA.png",
+                "alt": "cloth"
+            }
+        },
+        {
+            "id": 20,
+            "title": "Футболка STOP",
+            "priceSale": null,
+            "price": 110,
+            "image": {
+                "src": "/assets/images/shop/tShirtWhite.jpg",
+                "alt": "cloth"
+            }
+        }
+    ]
+}
