@@ -1,4 +1,5 @@
 import { ReactComponent as LogoIcon } from "../../assets/icon/logo.svg";
+import React from "react";
 import t from "../../assets/translations/translations";
 import styles from "./Logo.module.scss";
 

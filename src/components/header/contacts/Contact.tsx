@@ -1,6 +1,7 @@
 import styles from "./Contact.module.scss";
 import { ReactComponent as CallingIcon } from "../../../assets/icon/calling.svg";
 import t from "../../../assets/translations/translations";
+import React from "react";
 
 const Contact: React.FC = () => {
     return (
