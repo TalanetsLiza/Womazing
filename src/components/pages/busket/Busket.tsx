@@ -1,9 +1,10 @@
 import React from "react";
+import PageTitle from "../../PageTitle/PageTitle";
 
 const Busket: React.FC = () => {
     return (
         <div>
-            Busket
+            <PageTitle titleKey="busket" />
         </div>
     );
 };

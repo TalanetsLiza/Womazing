@@ -7,6 +7,7 @@ const t = {
         "shop": "Магазин",
         "about": "О Бренде",
         "contacts": "Контакты",
+        "busket": "Корзина",
     },
     contacts: {
         "phone": "+7 (495) 823-54-12",

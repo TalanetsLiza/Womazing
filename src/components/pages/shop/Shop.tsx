@@ -1,9 +1,10 @@
 import React from "react";
+import PageTitle from "../../PageTitle/PageTitle";
 
 const Shop: React.FC = () => {
     return (
         <div>
-            Shop
+            <PageTitle titleKey="shop" />
         </div>
     );
 };

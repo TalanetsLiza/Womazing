@@ -1,9 +1,10 @@
 import React from "react";
+import PageTitle from "../../PageTitle/PageTitle";
 
 const About: React.FC = () => {
     return (
         <div>
-            About
+            <PageTitle titleKey="about" />
         </div>
     );
 };
