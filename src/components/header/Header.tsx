@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "../logo/Logo";
 import Navigation from "../navigation/Navigation";
-import Busket from "./busket/Busket";
-import Contact from "./contacts/Contact";
+import HeaderBusket from "./busket/HeaderBusket";
+import HeaderContact from "./contacts/HeaderContact";
 import styles from "./Header.module.scss";
 
 const Header: React.FC = () => {
@@ -10,10 +10,10 @@ const Header: React.FC = () => {
         <div className={styles.header}>
             <Logo />
             <Navigation />
-            <Contact />
-            <Busket />
+            <HeaderContact />
+            <HeaderBusket />
         </div>
     );
-}
+};
 
 export default Header;

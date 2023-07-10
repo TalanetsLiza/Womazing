@@ -1,9 +1,9 @@
-import styles from "./Contact.module.scss";
+import styles from "./HeaderContact.module.scss";
 import { ReactComponent as CallingIcon } from "../../../assets/icon/calling.svg";
 import t from "../../../assets/translations/translations";
 import React from "react";
 
-const Contact: React.FC = () => {
+const HeaderContact: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.icon}>
@@ -14,6 +14,6 @@ const Contact: React.FC = () => {
             </a>
         </div>
     );
-}
+};
 
-export default Contact;
+export default HeaderContact;

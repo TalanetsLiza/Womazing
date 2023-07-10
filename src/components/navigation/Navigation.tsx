@@ -6,7 +6,7 @@ import React from "react";
 
 const Navigation: React.FC = () => {
     return (
-        <nav>
+        <nav className={styles.container}>
            <ul className={styles.ul}>
                 <li>
                     <Link to={pageUrls.home} className={styles.text}>
