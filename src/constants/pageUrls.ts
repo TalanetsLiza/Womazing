@@ -1,7 +1,7 @@
 const pageUrls = {
     home: "/",
     shop: "/shop",
-    product: "/shop/:id",
+    product: "/shop",
     busket: "/busket",
     ordering: "/busket/ordering",
     about: "/about",

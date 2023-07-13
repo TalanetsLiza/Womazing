@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import pageUrls from "../constants/pageUrls";
-import { fetchShop } from "../store/shop/shopSlice";
-import { useAppDispatch, useAppSelector } from "../store/store";
 import styles from "./App.module.scss";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
@@ -13,15 +11,6 @@ import Home from "./pages/home/Home";
 import Shop from "./pages/shop/Shop";
 
 const App: React.FC = () => {
-    const dispatch = useAppDispatch();
-    const shopData = useAppSelector((state) => state.shop.data);
-
-    console.log(shopData);
-
-    useEffect( () => {
-        dispatch(fetchShop());
-    }, []);
-
     return (
         <>
             <div className={styles.container}>
