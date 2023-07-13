@@ -23,3 +23,9 @@
         transition: all 0.5s ease;
     }
 }
+
+@media (max-width: 1150px) {
+    .container {
+        display: none;
+    }
+}

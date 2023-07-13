@@ -13,3 +13,11 @@
     letter-spacing: 0.3px;
     color: #000;
 }
+
+@media (max-width: 1150px) {
+    .container {
+        margin: 0;
+        padding-top: 30px;
+        align-items: center;
+    }
+}

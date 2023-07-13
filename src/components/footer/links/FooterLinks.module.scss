@@ -14,3 +14,17 @@
 .icon {
     padding: 0 12px;
 }
+
+@media (max-width: 560px) {
+    .container {
+        flex-direction: row;
+        margin-left: 0;
+        padding-top: 30px;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .containerTop {
+        padding-bottom: 0;
+    }
+}

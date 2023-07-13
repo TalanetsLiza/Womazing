@@ -14,12 +14,12 @@ const BannerItem: React.FC<PropsType> = ({
 }) => {
 
     return (
-        <div className={styles.column}>
+        <div className={styles.container}>
             {Icon}
-            <h3 className={styles.column__title}>
+            <h3 className={styles.title}>
                 {title}
             </h3>
-            <span className={styles.column__description}>
+            <span className={styles.description}>
                 {description}
             </span>
         </div>
