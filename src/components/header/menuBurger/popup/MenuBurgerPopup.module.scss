@@ -1,0 +1,26 @@
+
+.container {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #6E9C9F;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.li {
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 15px;
+    color: #6E9C9F;
+    cursor: pointer;
+}

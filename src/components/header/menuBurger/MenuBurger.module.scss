@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40px;
+    cursor: pointer;
+    display: none;
+    // position: relative;
+    top: 0;
+    left: 30px;
+    right: 0;
+    z-index: 1;
+    margin-right: auto;
+}
+
+.burger {
+    padding-bottom: 4px;
+}
+
+@media (max-width: 1150px) {
+    .menu {
+        display: flex;
+    }
+}

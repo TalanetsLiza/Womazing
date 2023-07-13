@@ -15,3 +15,15 @@
     letter-spacing: 0.3px;
     color: #000;
 }
+
+@media (max-width: 670px) {
+    .container {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 530px) {
+    .container {
+        display: none;
+    }
+}
