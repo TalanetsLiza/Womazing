@@ -10,7 +10,7 @@ const FooterCategories: React.FC = () => {
             <ul className={styles.ul}>
                 <li>
                     <Link to={pageUrls.shop} className={styles.text}>
-                        {t.categories.coat}
+                        {t.categories.coa}
                     </Link>
                 </li>
                 <li>
