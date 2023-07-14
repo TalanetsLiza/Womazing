@@ -33,6 +33,12 @@
     letter-spacing: 0.34px;
 }
 
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 1000px) {  
     
     .block {

@@ -4,6 +4,9 @@ import PageTitle from "../../pageTitle/PageTitle";
 import styles from "./About.module.scss"
 import Image1 from "../../../assets/images/aboutPageArticle1.png";
 import Image2 from "../../../assets/images/aboutPageArticle2.png";
+import Button from "../../button/Button";
+import { Link } from "react-router-dom";
+import pageUrls from "../../../constants/pageUrls";
 
 const About: React.FC = () => {
     return (
@@ -39,6 +42,15 @@ const About: React.FC = () => {
                 </div>
                 <img className={styles.image} src={Image2} alt="фото" />
             </div>
+            <Link to={pageUrls.shop} className={styles.link}>
+                <Button 
+                    variant="filled"
+                    type="submit"
+                >
+                    {t.button.goShop}
+                </Button>
+            </Link>
+            
         </div>
     );
 };
