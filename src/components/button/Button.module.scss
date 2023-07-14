@@ -1,0 +1,49 @@
+.button {
+    padding: 22px 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 138.9%;
+    letter-spacing: 0.34px;
+    font-family: "Raleway";
+    white-space: nowrap;
+}
+
+.filledButton {
+    background-color: rgba(110, 156, 159, 1);
+    border: 1px solid rgba(110, 156, 159, 1);
+    color: #fff;
+
+    &:hover {
+        background-color: #509498;
+        border: 1px solid #509498;
+    }
+}
+
+.outlineButton {
+    border: 1px solid #6E9C9F;
+    color: #6E9C9F;
+
+    &:hover {
+        background-color: rgba(110, 156, 159, 1);
+        border: 1px solid rgba(110, 156, 159, 1);
+        color: #fff;
+    }
+}
+
+@media (max-width: 870px) {    
+    .button {
+        padding: 18px 25px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {    
+    .button {
+        padding: 18px 20px;
+        font-size: 15px;
+    }
+}

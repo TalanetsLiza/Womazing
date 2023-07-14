@@ -3,9 +3,11 @@ import { TypedUseSelectorHook } from "react-redux/es/types";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import shopSlice from "./shop/shopSlice";
+import productSlice from "./product/productSlice";
 
 const rootReducer = combineReducers({
 	shop: shopSlice,
+	product: productSlice,
 });
 
 export const store = configureStore({

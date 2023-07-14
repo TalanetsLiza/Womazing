@@ -1,0 +1,16 @@
+.button {
+    width: 41px;
+    height: 41px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.activeButton {
+    border: 1px solid #000;
+}

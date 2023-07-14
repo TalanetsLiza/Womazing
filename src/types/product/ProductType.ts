@@ -1,3 +1,5 @@
+ export type SizeType = "S" | "M" | "L" | "XL" | "XXL";
+
 interface ProductType {
     id: number,
     title: string,
@@ -6,7 +8,10 @@ interface ProductType {
     image: {
         src: string,
         alt: string,
-    }
+    },
+    sizes: SizeType[],
+    colors: string[],
+
 }
 
 export default ProductType;

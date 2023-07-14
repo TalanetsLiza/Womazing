@@ -1,7 +1,20 @@
 .container {
     margin: 50px 0 26px;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 500;
     line-height: 110%;
     letter-spacing: 1.1px;
+}
+
+@media (max-width: 1173px) {
+    .container{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        font-size: 32px;
+        margin: 0px 0 26px;
+    }
 }

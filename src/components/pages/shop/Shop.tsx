@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { fetchShop } from "../../../store/shop/shopSlice";
 import { useAppDispatch, useAppSelector } from "../../../store/store";
-import PageTitle from "../../PageTitle/PageTitle";
+import PageTitle from "../../pageTitle/PageTitle";
 import Product from "./product/Product";
 import styles from "./Shop.module.scss";
 

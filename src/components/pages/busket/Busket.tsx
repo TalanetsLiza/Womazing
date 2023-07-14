@@ -1,5 +1,5 @@
 import React from "react";
-import PageTitle from "../../PageTitle/PageTitle";
+import PageTitle from "../../pageTitle/PageTitle";
 
 const Busket: React.FC = () => {
     return (

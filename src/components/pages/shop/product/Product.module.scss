@@ -52,6 +52,12 @@
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.3px;
-    // text-decoration-line: strikethrough;
     text-decoration: line-through;
+}
+
+
+@media (max-width: 415px) {
+    .image{
+        width: 256px;
+    }
 }
