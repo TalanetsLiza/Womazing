@@ -11,6 +11,7 @@ interface ProductType {
     },
     sizes: SizeType[],
     colors: string[],
+    relatedItems: number[],
 
 }
 

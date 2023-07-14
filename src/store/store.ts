@@ -4,10 +4,12 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import shopSlice from "./shop/shopSlice";
 import productSlice from "./product/productSlice";
+import relatedProductsSlice from "./relatedProducts/relatedProductsSlice";
 
 const rootReducer = combineReducers({
 	shop: shopSlice,
 	product: productSlice,
+	relatedProducts: relatedProductsSlice,
 });
 
 export const store = configureStore({

@@ -42,6 +42,7 @@ const t = {
     productPage: {
         sizeName:  "Выберите размер",
         colorName: "Выберите цвет",
+        relatedProduct:"Связанные товары"
     },
     button: {
         addBusket: "Добавить в корзину",

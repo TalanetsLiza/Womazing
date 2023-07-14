@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchProduct } from "../../../store/product/productSlice";
 import { useAppDispatch, useAppSelector } from "../../../store/store";
 import ProductCard from "./productCard/ProductCard";
+import RelatedProducts from "./relatedProducts/RelatedProducts";
 
 const ProductPage: React.FC = () => {
     const{ id } = useParams();
@@ -34,7 +35,10 @@ const ProductPage: React.FC = () => {
     }
 
     return (
-        <ProductCard productData={productData} />
+        <>
+            <ProductCard productData={productData} />
+            <RelatedProducts productData={productData} />
+        </>
     );
 };
 
