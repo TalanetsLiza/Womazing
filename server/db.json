@@ -16,7 +16,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [7, 17]
+            "relatedItems": [7, 17],
+            "newCollection": false
         },
         {
             "id": 2,
@@ -34,7 +35,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [4, 18]
+            "relatedItems": [4, 18],
+            "newCollection": false
         },
         {
             "id": 3,
@@ -52,7 +54,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [2, 12]
+            "relatedItems": [2, 12],
+            "newCollection": false
         },
         {
             "id": 4,
@@ -70,7 +73,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [11, 14]
+            "relatedItems": [11, 14],
+            "newCollection": false
         },
         {
             "id": 5,
@@ -88,7 +92,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [1, 12]
+            "relatedItems": [1, 12],
+            "newCollection": false
         },
         {
             "id": 6,
@@ -106,7 +111,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [5, 16]
+            "relatedItems": [5, 16],
+            "newCollection": false
         },
         {
             "id": 7,
@@ -124,7 +130,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [9, 14]
+            "relatedItems": [9, 14],
+            "newCollection": true
         },
         {
             "id": 8,
@@ -142,7 +149,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [16, 19]
+            "relatedItems": [16, 19],
+            "newCollection": false
         },
         {
             "id": 9,
@@ -160,7 +168,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [11, 13]
+            "relatedItems": [11, 13],
+            "newCollection": false
         },
         {
             "id": 10,
@@ -178,7 +187,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [8, 14]
+            "relatedItems": [8, 14],
+            "newCollection": false
         },
         {
             "id": 11,
@@ -196,7 +206,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [6, 13]
+            "relatedItems": [6, 13],
+            "newCollection": true
         },
         {
             "id": 12,
@@ -214,7 +225,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [11, 20]
+            "relatedItems": [11, 20],
+            "newCollection": false
         },
         {
             "id": 13,
@@ -232,7 +244,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [3, 16]
+            "relatedItems": [3, 16],
+            "newCollection": false
         },
         {
             "id": 14,
@@ -250,7 +263,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [6, 19]
+            "relatedItems": [6, 19],
+            "newCollection": false
         },
         {
             "id": 15,
@@ -268,7 +282,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [5, 8]
+            "relatedItems": [5, 8],
+            "newCollection": true
         },
         {
             "id": 16,
@@ -286,7 +301,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [1, 10]
+            "relatedItems": [1, 10],
+            "newCollection": false
         },
         {
             "id": 17,
@@ -304,7 +320,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [8, 11]
+            "relatedItems": [8, 11],
+            "newCollection": false
         },
         {
             "id": 18,
@@ -322,7 +339,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [7, 13]
+            "relatedItems": [7, 13],
+            "newCollection": false
         },
         {
             "id": 19,
@@ -340,7 +358,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [3, 14]
+            "relatedItems": [3, 14],
+            "newCollection": false
         },
         {
             "id": 20,
@@ -358,7 +377,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [1, 12]
+            "relatedItems": [1, 12],
+            "newCollection": false
         }
     ]
 }

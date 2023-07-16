@@ -39,6 +39,9 @@ const t = {
             description: "Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing",
         }
     },
+    newCollection: {
+        name: "Новая коллекция"
+    },
     productPage: {
         sizeName:  "Выберите размер",
         colorName: "Выберите цвет",

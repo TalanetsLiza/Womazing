@@ -5,11 +5,13 @@ import { useDispatch } from "react-redux";
 import shopSlice from "./shop/shopSlice";
 import productSlice from "./product/productSlice";
 import relatedProductsSlice from "./relatedProducts/relatedProductsSlice";
+import newCollectionSlice from "./newCollectionProduct/newCollectionSlice";
 
 const rootReducer = combineReducers({
 	shop: shopSlice,
 	product: productSlice,
 	relatedProducts: relatedProductsSlice,
+	newCollection: newCollectionSlice,
 });
 
 export const store = configureStore({
