@@ -12,7 +12,7 @@ interface ProductType {
     sizes: SizeType[],
     colors: string[],
     relatedItems: number[],
-
+    newCollection?: boolean,
 }
 
 export default ProductType;
