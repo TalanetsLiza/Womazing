@@ -1,0 +1,68 @@
+.container {
+    max-width: 600px;
+    max-height: 400px;
+
+    :global(.carousel) {
+        overflow: visible !important;
+    }
+}
+
+.prevButton {
+    position: absolute;
+    top: 50%;
+    left: -46px;
+    transform: translate(0, -50%);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+
+    &:disabled {
+        svg {
+            path {
+                stroke: #858585;
+            }
+        }
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+}
+
+.nextButton {
+    position: absolute;
+    top: 50%;
+    right: -46px;
+    transform: translate(0, -50%);
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:disabled {
+        svg {
+            path {
+                stroke: #858585;
+            }
+        }
+    }
+}
+
+@media (max-width: 1173px) {    
+    .container {
+        max-width: 550px;
+        max-height: 350px;
+    }
+
+    .nextButton {
+        display: none;
+    }
+
+    .prevButton {
+        display: none;
+    }
+}
