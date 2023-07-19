@@ -9,6 +9,7 @@ import PageTitle from "../../pageTitle/PageTitle";
 import styles from "./Busket.module.scss";
 import CardBusket from "./cardBusket/CardBusket";
 import CouponBusket from "./couponBusket/CouponBusket";
+import NoProduct from "./noProduct/NoProduct";
 import TotalBusket from "./totalBusket/TotalBusket";
 
 const Busket: React.FC = () => {
@@ -21,19 +22,7 @@ const Busket: React.FC = () => {
 
     if (itemsData.length === 0) {
         return (
-            <div className={styles.container}>
-                <div className={styles.noProduct}>
-                    В корзине нет товаров
-                <Link to={pageUrls.shop}>
-                    <Button
-                        variant="filled"
-                        type="submit"
-                    >
-                        {t.button.goShop}
-                    </Button>
-                </Link>
-                </div>
-            </div>
+            <NoProduct />
         );
     };
 
