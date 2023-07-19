@@ -1,4 +1,19 @@
 .container {
     cursor: pointer;
     margin-left: auto;
+    position: relative;
+}
+
+.count {
+    color: #6E9C9F;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 13px;
+    position: absolute;
+    bottom: 6px;
 }

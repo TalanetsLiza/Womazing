@@ -3,10 +3,8 @@ import styles from "./Button.module.scss";
 
 type VariantsType = "filled" | "outline";
 
-interface PropsType {
-    children: string,
+interface PropsType extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: VariantsType,
-    type?: "button" | "submit" | "reset",
 }
 
 const variantsStyles: Record<VariantsType, string> = {
@@ -17,14 +15,14 @@ const variantsStyles: Record<VariantsType, string> = {
 const Button:React.FC<PropsType> = ({
     children,
     variant = "filled",
-    type,
+    ...props
 }) => {
     const customStyle = variantsStyles[variant];
 
     return (
         <button
             className={`${styles.button} ${customStyle}`}
-            type={type}
+            {...props}
         >
             {children}
         </button>

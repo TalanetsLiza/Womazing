@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    margin: 50px 0 25px;
+    align-items: flex-end;
+    gap: 15px
+}
+
+.input {
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 60px;
+    width: 230;
+
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.34px;
+    color: #000;
+
+    &::placeholder {
+        color: #868686;
+    }
+}

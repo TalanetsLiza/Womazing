@@ -8,6 +8,7 @@ const t = {
         about: "О Бренде",
         contacts: "Контакты",
         busket: "Корзина",
+        ordering: "Оформление заказа",
     },
     categories: {
         all: "Все",
@@ -65,6 +66,8 @@ const t = {
         openShop: "Открыть магазин",
         checkout: "Отправить заказ",
         about: "Подробнее о бренде",
+        gotoBusket : "Перейти в корзину",
+        addCoupon:"Применить купон"
     },
     aboutPage: {
         articles: [
@@ -83,6 +86,20 @@ const t = {
                 ] 
             }
         ],
+    },
+    busketPage: {
+        tableHeader: {
+            product: "Товар",
+            price: "Цена",
+            quantity: "Количество",
+            totalPrice: "Всего"
+        },
+        submitButton: "Выберите размер и цвет",
+        couponePlaceholder: "Введите купон",
+        totalBusket: {
+            subtotal: "Подытог:",
+            total: "Итого:"
+        }
     }
 };
 

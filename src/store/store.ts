@@ -6,12 +6,14 @@ import shopSlice from "./shop/shopSlice";
 import productSlice from "./product/productSlice";
 import relatedProductsSlice from "./relatedProducts/relatedProductsSlice";
 import newCollectionSlice from "./newCollectionProduct/newCollectionSlice";
+import busketSlice from "./busket/busketSlice";
 
 const rootReducer = combineReducers({
 	shop: shopSlice,
 	product: productSlice,
 	relatedProducts: relatedProductsSlice,
 	newCollection: newCollectionSlice,
+	busket: busketSlice,
 });
 
 export const store = configureStore({
@@ -22,6 +24,6 @@ type AppDispatchType = typeof store.dispatch;
 
 export const useAppDispatch: () => AppDispatchType = useDispatch;
 
-type RootStateType = ReturnType<typeof store.getState>;
+export type RootStateType = ReturnType<typeof store.getState>;
 
 export const useAppSelector: TypedUseSelectorHook<RootStateType> = useSelector;

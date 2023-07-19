@@ -50,6 +50,17 @@
     gap: 11px;
 }
 
+.containerAddBusket {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.4px;
+}
+
 .amountButton {
     font-size: 20px;
     font-style: normal;

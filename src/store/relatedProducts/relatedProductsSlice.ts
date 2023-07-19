@@ -38,8 +38,8 @@ const relatedProductsSlice = createSlice({
 		builder.addCase(fetchRelatedProduct.rejected, (state, action) => {
 			state.status = "failed";
             state.error = action.error.message ?? null;
-		})
-    }
+		});
+    },
 });
 
 export default relatedProductsSlice.reducer;

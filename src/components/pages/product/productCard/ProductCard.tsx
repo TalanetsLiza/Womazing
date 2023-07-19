@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import t from "../../../../assets/translations/translations";
+import pageUrls from "../../../../constants/pageUrls";
+import { add } from "../../../../store/busket/busketSlice";
+import { useAppDispatch, useAppSelector} from "../../../../store/store";
 import ProductType, { SizeType } from "../../../../types/product/ProductType";
 import Button from "../../../button/Button";
 import PageTitle from "../../../pageTitle/PageTitle";
@@ -17,10 +21,21 @@ const ProductCard: React.FC<PropsType> = ({
     const [selectedSize, setSelectedSize] = useState<SizeType | null>(null);
     const [seleckedColor, setSelectedColor] = useState<string | null>(null);
 
-    // console.log(selectedSize);
+    const basketItems = useAppSelector((state) => state.busket.items);
+
+    const isInBusket = basketItems.some((dataItem) => dataItem.id === productData.id);
+
+    const dispatch = useAppDispatch();
+
+    const addToBusket = () => {
+        dispatch(add(productData.id));
+    };
 
     const currentPrice = productData.priceSale ?? productData?.price;
     const oldPrice = productData.priceSale && productData.price;
+
+    const submitDisabled = !selectedSize || !seleckedColor;
+    const submitTitle = submitDisabled ? t.busketPage.submitButton : undefined;
 
     return (
         <>
@@ -68,19 +83,36 @@ const ProductCard: React.FC<PropsType> = ({
                             ))}
                         </div>
                     </div>
-                    <div className={styles.containerButton}>
-                        <button className={styles.amountButton}>
+                    {!isInBusket ? (
+                        <div className={styles.containerButton}>
+                            <button className={styles.amountButton}>
                             1
-                        </button>
-                        <Button 
-                        variant="filled"
-                        type="submit"
+                            </button>
+                            <Button
+                                onClick={addToBusket}
+                                variant="filled"
+                                type="submit"
+                                disabled={submitDisabled}
+                                title={submitTitle}
+                            >
+                                {t.button.addBusket}
+                            </Button>
+                        </div>
+                    ) : (
 
-                        >
-                            {t.button.addBusket}
-                        </Button>
-                    </div>
-                    
+                        <div className={styles.containerAddBusket}>
+                            Товар добавлен в корзину
+                            <Link to={pageUrls.busket}>
+                            <Button
+                                variant="outline"
+                                type="submit"
+                            >
+                                {t.button.gotoBusket}
+                            </Button>
+                        </Link>
+                        </div>
+                        
+                    )}
                 </div>
             </div>
         </>
