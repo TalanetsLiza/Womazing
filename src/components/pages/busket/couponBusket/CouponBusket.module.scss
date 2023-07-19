@@ -24,3 +24,23 @@
         color: #868686;
     }
 }
+
+@media (max-width: 765px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 510px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input {
+        width: 100%;
+    }
+}

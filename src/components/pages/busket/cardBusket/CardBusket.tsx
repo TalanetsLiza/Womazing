@@ -32,7 +32,7 @@ const CardBusket: React.FC<PropsType> = ({
                 >
                     <CloseIcon />
                 </button>
-                <Link to={`${pageUrls.product}/${dataItem.id}`} className={styles.block}>
+                <Link to={`${pageUrls.product}/${dataItem.id}`} className={styles.blockLink}>
                     <img
                     className={styles.image}
                     src={dataItem.image.src}

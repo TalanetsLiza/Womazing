@@ -33,3 +33,45 @@
     align-items: center;
     justify-content: space-around;
 }
+
+@media (max-width: 1173px) {
+    .container {
+        margin-left: 0;
+        padding-top: 15px;
+    }
+
+    .totlal {
+        width: 220px;
+    }
+}
+
+@media (max-width: 870px) {
+    .container {
+        width: auto;
+    }
+
+    .totlal {
+        height: 58px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 765px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 510px) {
+    .container, .blockTotlal {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blockTotlal, .totlal {
+        width: 100%;
+    }
+}

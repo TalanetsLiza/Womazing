@@ -10,7 +10,7 @@
     letter-spacing: 0.4px;
 }
 
-.block {
+.block, .blockLink {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -37,7 +37,6 @@
 
 .amountButton {
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.4px;
@@ -48,4 +47,62 @@
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+}
+
+@media (max-width: 1173px) {
+    .table {
+        gap: 135px;
+    }
+}
+
+@media (max-width: 970px) {
+    .table {
+        gap: 85px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
+    .table {
+        gap: 90px;
+    }
+
+    .amountButton {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .block {
+        width: 200px;
+    }
+}
+
+@media (max-width: 765px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .block {
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
+    .blockLink {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .table {
+        gap: 40px;
+        margin-right: 0;
+    }
 }
