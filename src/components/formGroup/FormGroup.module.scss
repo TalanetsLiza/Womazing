@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 350px;
+    gap: 47px;
+}
+
+.block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+@media (max-width: 790px) {    
+    .title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 440px) {    
+    .container {
+        width: 300px;
+    }
+}
+
+@media (max-width: 380px) {    
+    .container {
+        width: 250px;
+    }
+}

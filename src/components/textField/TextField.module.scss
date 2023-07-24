@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 16px;
+    width: 97%;
+
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.34px;
+
+    &::placeholder {
+        color: #868686;
+    }
+}
+
+.error {
+    max-width: 95%;
+    position: absolute;
+    color: rgb(218, 94, 94);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+@media (max-width: 790px) {    
+    .error {
+        font-size: 15px;
+    }
+}

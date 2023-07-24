@@ -101,7 +101,7 @@ const ProductCard: React.FC<PropsType> = ({
                     ) : (
 
                         <div className={styles.containerAddBusket}>
-                            Товар добавлен в корзину
+                            {t.busketPage.addBusket}
                             <Link to={pageUrls.busket}>
                             <Button
                                 variant="outline"

@@ -62,6 +62,11 @@ const busketSlice = createSlice({
             state.itemsData = state.itemsData.filter((item) => item.id !== id);
             saveToLocalSrorage(state);
         },
+        clearLocalStorage: (state) => {
+            state.items = [];
+            state.itemsData = [];
+            localStorage.removeItem("busket");
+        },
     },
     extraReducers(builder) {
         builder.addCase(fetchBusketItemsData.pending, (state) => {
@@ -78,6 +83,6 @@ const busketSlice = createSlice({
     },
 });
 
-export const { add, remove } = busketSlice.actions;
+export const { add, remove, clearLocalStorage } = busketSlice.actions;
 
 export default busketSlice.reducer;

@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 255px;
+    color: #000;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    padding-bottom: 17px;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+}
+
+.tableInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    letter-spacing: 0.34px;
+}
+
+.tableTotal {
+    background-color: rgba(241, 234, 220, 1);
+    padding: 15px 5px;
+}
+
+.payment {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+}
+
+.paymentLabel {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.34px;
+    display: flex;
+    align-items: center;
+}
+
+.paymentInput {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #000;
+    margin-right: 14px;
+
+    &:checked {
+        accent-color: #6E9C9F;
+    }
+}
+
+@media (max-width: 790px) {    
+    .title {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .payment {
+        margin-top: 0;
+        gap: 20px;
+    }
+
+    .paymentLabel {
+        justify-content: center;
+    }
+}
