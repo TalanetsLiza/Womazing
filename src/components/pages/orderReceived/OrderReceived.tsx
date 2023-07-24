@@ -9,7 +9,7 @@ import pageUrls from "../../../constants/pageUrls";
 
 const OrderReceived: React.FC = () => {
     return (
-        <div>
+        <div className="block">
             <PageTitle titleKey="orderReceived" />
             <div className={styles.container}>
                 <div className={styles.block}>

@@ -14,7 +14,7 @@ const Shop: React.FC = () => {
     },[]);
 
     return (
-        <div>
+        <div className="block">
             <PageTitle titleKey="shop" />
             <div className={styles.products}>
                 {shopData.map((dataItem) => (

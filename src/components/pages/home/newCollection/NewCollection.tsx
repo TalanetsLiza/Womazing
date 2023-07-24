@@ -17,23 +17,25 @@ const NewCollection:React.FC = () => {
     }, []);
 
     return (
-        <div className={styles.container}>
-            <h2 className={styles.title}>
-                {t.newCollection.name}
-            </h2>
-            <div className={styles.products}>
-                {productDataNewCollection.map((dataItem) => (
-                    <Product key={dataItem.id} dataItem={dataItem} />
-                ))}
+        <div className="block">
+            <div className={styles.container}>
+                <h2 className={styles.title}>
+                    {t.newCollection.name}
+                </h2>
+                <div className={styles.products}>
+                    {productDataNewCollection.map((dataItem) => (
+                        <Product key={dataItem.id} dataItem={dataItem} />
+                    ))}
+                </div>
+                <Link to={pageUrls.shop} className={styles.link}>
+                    <Button 
+                        variant="outline"
+                        type="submit"
+                    >
+                        {t.button.openShop}
+                    </Button>
+                </Link>
             </div>
-            <Link to={pageUrls.shop} className={styles.link}>
-                <Button 
-                    variant="outline"
-                    type="submit"
-                >
-                    {t.button.openShop}
-                </Button>
-            </Link>
         </div>
     );
 };

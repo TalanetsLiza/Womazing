@@ -35,10 +35,10 @@ const ProductPage: React.FC = () => {
     }
 
     return (
-        <>
+        <div className="block">
             <ProductCard productData={productData} />
             <RelatedProducts productData={productData} />
-        </>
+        </div>
     );
 };
 

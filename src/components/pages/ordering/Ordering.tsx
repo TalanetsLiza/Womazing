@@ -46,7 +46,7 @@ const Ordering: React.FC = () => {
     };
 
     return (
-        <div>
+        <div className="block">
             <PageTitle titleKey="ordering" />
             <form className={styles.container} onSubmit={handelSubmit} id="ordering-form">
                 <Form values={values} setValues={setValues} validation={validation}/>

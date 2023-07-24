@@ -27,32 +27,34 @@ const Busket: React.FC = () => {
     };
 
     return (
-        <div className={styles.container}>
-            <PageTitle titleKey="busket" />
-            <div className={styles.tableHeader}>
+        <div className="block">
+            <div className={styles.container}>
+                <PageTitle titleKey="busket" />
+                <div className={styles.tableHeader}>
+                    <div>
+                        {t.busketPage.tableHeader.product}
+                    </div>
+                    <div className={styles.tableHeaderRight}>
+                        <div>
+                            {t.busketPage.tableHeader.price}
+                        </div>
+                        <div>
+                            {t.busketPage.tableHeader.quantity}
+                        </div>
+                        <div>
+                            {t.busketPage.tableHeader.totalPrice}
+                        </div>
+                    </div>
+                </div>
                 <div>
-                    {t.busketPage.tableHeader.product}
+                    {itemsData.map((dataItem) => (
+                        <CardBusket key={dataItem.id} dataItem={dataItem} />
+                    ))}
                 </div>
-                <div className={styles.tableHeaderRight}>
-                    <div>
-                        {t.busketPage.tableHeader.price}
-                    </div>
-                    <div>
-                        {t.busketPage.tableHeader.quantity}
-                    </div>
-                    <div>
-                        {t.busketPage.tableHeader.totalPrice}
-                    </div>
-                </div>
+                <CouponBusket />
+                <TotalBusket />
             </div>
-            <div>
-                {itemsData.map((dataItem) => (
-                    <CardBusket key={dataItem.id} dataItem={dataItem} />
-                ))}
-            </div>
-            <CouponBusket />
-            <TotalBusket />
-        </div>
+        </div>  
     );
 };
 

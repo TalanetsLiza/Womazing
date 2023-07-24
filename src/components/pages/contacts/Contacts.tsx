@@ -3,7 +3,7 @@ import PageTitle from "../../pageTitle/PageTitle";
 
 const Contacts: React.FC = () => {
     return (
-        <div>
+        <div className="block">
             <PageTitle titleKey="contacts" />
         </div>
     );

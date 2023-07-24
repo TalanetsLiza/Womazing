@@ -8,12 +8,14 @@ import MenuBurger from "./menuBurger/MenuBurger";
 
 const Header: React.FC = () => {
     return (
-        <div className={styles.header}>
+        <div className="block">
+            <div className={styles.header}>
             <MenuBurger />
             <Logo />
             <Navigation />
             <HeaderContact />
             <HeaderBusket />
+            </div>
         </div>
     );
 };

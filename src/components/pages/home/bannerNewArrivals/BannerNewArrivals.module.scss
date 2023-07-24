@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.blockText {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #000;
+    max-width: 585px;
+    margin-left: 140px;
+}
+
+.blockImage {
+    background-color: rgba(241, 234, 220, 1);
+    position: relative;
+    width: 705px;
+    height: 826px;
+    padding-left: 50px;
+    margin-top: -111px;
+}
+
+.title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 1.1px;
+}
+
+.description {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.4px;
+    max-width: 385px;
+}
+
+.button {
+    margin-left: 140px;
+}
+
+.imageLeft {
+    position: absolute;
+    z-index: 2;
+    top: 508px;
+    left: -84px;
+}
+
+.imageCenter {
+    position: absolute;
+    top: 140px;
+}
+
+.imageRight {
+    position: absolute;
+    top: 262px;
+    left: 368px;
+}
+
+@media (max-width: 1310px) {    
+    .blockText {
+        margin-left: 100px;
+    }
+
+    .title {
+        font-size: 50px;
+        width: auto;
+    }
+}
+
+@media (max-width: 1258px) {    
+    .container {
+        justify-content: center;
+        padding: 45px 74px;
+        background-color: rgba(241, 234, 220, 1);
+    }
+
+    .blockText {
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .title, .description {
+        text-align: center;
+    }
+
+    .blockImage, .imageLeft, .imageCenter, .imageRight {
+        display: none;
+    }
+}
+
+@media (max-width: 794px) {
+    .container {
+        padding: 35px 35px;
+    }
+
+    .title {
+        font-size: 35px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 465px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        text-align: justify;
+    }
+}
