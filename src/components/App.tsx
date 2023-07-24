@@ -9,6 +9,7 @@ import Busket from "./pages/busket/Busket";
 import Contacts from "./pages/contacts/Contacts";
 import Home from "./pages/home/Home";
 import Ordering from "./pages/ordering/Ordering";
+import OrderReceived from "./pages/orderReceived/OrderReceived";
 import ProductPage from "./pages/product/ProductPage";
 import Shop from "./pages/shop/Shop";
 
@@ -25,6 +26,7 @@ const App: React.FC = () => {
                 <Route path={pageUrls.contacts} element={<Contacts />} />
                 <Route path={pageUrls.busket} element={<Busket />} />
                 <Route path={pageUrls.ordering} element={<Ordering />} />
+                <Route path={pageUrls.orderReceived} element={<OrderReceived />} />
             </Routes>
             </div>
             <div className={styles.footer}>

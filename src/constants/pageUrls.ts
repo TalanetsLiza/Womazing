@@ -4,6 +4,7 @@ const pageUrls = {
     product: "/shop",
     busket: "/busket",
     ordering: "/busket/ordering",
+    orderReceived: "/busket/ordering/orderReceived",
     about: "/about",
     contacts: "/contacts",
 };

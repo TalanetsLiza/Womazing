@@ -7,6 +7,8 @@ import OrderType from "../../../types/order/OrderType";
 import useValidation from "../../../hooks/useValidation";
 import { useAppDispatch } from "../../../store/store";
 import { clearLocalStorage } from "../../../store/busket/busketSlice";
+import { useNavigate } from "react-router-dom";
+import pageUrls from "../../../constants/pageUrls";
 
 
 const defaultState: OrderType = {
@@ -26,6 +28,7 @@ const Ordering: React.FC = () => {
     const [values, setValues] = useState<OrderType>(defaultState);
     const dispatch = useAppDispatch();
     const validation = useValidation();
+    const navigate = useNavigate();
 
     const handelSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -38,6 +41,7 @@ const Ordering: React.FC = () => {
                 return;
             }
             dispatch(clearLocalStorage());
+            navigate(pageUrls.orderReceived);
         }, 10);
     };
 

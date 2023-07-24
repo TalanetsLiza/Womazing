@@ -9,6 +9,7 @@ const t = {
         contacts: "Контакты",
         busket: "Корзина",
         ordering: "Оформление заказа",
+        orderReceived: "Заказ получен",
     },
     categories: {
         all: "Все",
@@ -51,6 +52,10 @@ const t = {
             },
         },
     },
+    bannerNewArrivals: {
+        title: "Новые поступления в этом сезоне",
+        description: "Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать.",
+    },
     newCollection: {
         name: "Новая коллекция",
     },
@@ -63,6 +68,7 @@ const t = {
         addBusket: "Добавить в корзину",
         updataBusket: "Обновить корзину",
         goShop: "Перейти в магазин",
+        goHome: "Перейти на главную",
         openShop: "Открыть магазин",
         checkout: "Отправить заказ",
         about: "Подробнее о бренде",
@@ -123,7 +129,11 @@ const t = {
             flat: "Квартира*",
             comment: "Коментарий",
         },
-    }
+    }, 
+    orderReceivedPage: {
+        title: "Заказ успешно оформлен",
+        description: "Мы свяжемся с вами в ближайшее время!",
+    },
 };
 
 export default t;
