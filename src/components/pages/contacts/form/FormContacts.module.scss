@@ -1,0 +1,17 @@
+.success {
+    background-color: #F1EADC;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.34px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 950px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

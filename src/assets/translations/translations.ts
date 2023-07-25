@@ -141,6 +141,7 @@ const t = {
             comment: "Коментарий",
             message: "Сообщение",
         },
+        success: "Сообщение успешно отправлено",
     }, 
     orderReceivedPage: {
         title: "Заказ успешно оформлен",
