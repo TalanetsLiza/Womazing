@@ -70,7 +70,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [11, 14]
+            "relatedItems": [11, 14],
+            "categories": ["costume"]
         },
         {
             "id": 5,
@@ -88,7 +89,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [1, 12]
+            "relatedItems": [1, 12],
+            "categories": ["costume"]
         },
         {
             "id": 6,
@@ -106,7 +108,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [5, 16]
+            "relatedItems": [5, 16],
+            "categories": ["dress"]
         },
         {
             "id": 7,
@@ -125,7 +128,8 @@
                 "rgba(253, 199, 150, 1)"
             ],
             "relatedItems": [9, 14],
-            "newCollection": true
+            "newCollection": true,
+            "categories": ["dress"]
         },
         {
             "id": 8,
@@ -143,7 +147,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [16, 19]
+            "relatedItems": [16, 19],
+            "categories": ["dress"]
         },
         {
             "id": 9,
@@ -161,7 +166,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [11, 13]
+            "relatedItems": [11, 13],
+            "categories": ["dress"]
         },
         {
             "id": 10,
@@ -252,7 +258,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [6, 19]
+            "relatedItems": [6, 19],
+            "categories": ["shorts"]
         },
         {
             "id": 15,
@@ -271,7 +278,8 @@
                 "rgba(253, 199, 150, 1)"
             ],
             "relatedItems": [5, 8],
-            "newCollection": true
+            "newCollection": true,
+            "categories": ["shorts"]
         },
         {
             "id": 16,
@@ -325,7 +333,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [7, 13]
+            "relatedItems": [7, 13],
+            "categories": ["tShirt"]
         },
         {
             "id": 19,
@@ -343,7 +352,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [3, 14]
+            "relatedItems": [3, 14],
+            "categories": ["tShirt"]
         },
         {
             "id": 20,
@@ -361,7 +371,8 @@
                 "rgba(253, 150, 150, 1)",
                 "rgba(253, 199, 150, 1)"
             ],
-            "relatedItems": [1, 12]
+            "relatedItems": [1, 12],
+            "categories": ["tShirt"]
         }
     ]
 }

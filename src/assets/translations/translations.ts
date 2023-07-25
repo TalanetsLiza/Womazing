@@ -13,15 +13,24 @@ const t = {
     },
     categories: {
         all: "Все",
-        coa: "Пальто",
-        sweatshirts: "Свитшоты",
-        cardigans: "Кардиганы",
-        hoodies: "Толстовки",
+        dress: "Платья",
+        costume: "Костюмы",
+        tShirt: "Футболки",
+        shorts: "Шорты",
     },
     contacts: {
-        phone: "+7 (495) 823-54-12",
-        email: "hello@womazing.com",
-        addres: "г. Москва, 3-я улица Строителей, 25",
+        phone: {
+            name: "Телефон",
+            number: "+7 (495) 823-54-12",
+        },
+        email: {
+            name: "E-mail",
+            addres: "hello@womazing.com",
+        },
+        addres: {
+            name: "Адрес",
+            addres: "г. Москва, 3-я улица Строителей, 25",
+        },
     },
     bunner: {
         title: "Новые поступления в этом сезоне",
@@ -75,6 +84,7 @@ const t = {
         gotoBusket : "Перейти в корзину",
         addCoupon:"Применить купон",
         placeYourOrder:"Разместить заказ",
+        send: "Отправить",
     },
     aboutPage: {
         articles: [
@@ -117,6 +127,7 @@ const t = {
             order: "Ваш заказ",
             paymentMethods: "Способы оплаты",
             paementCash: "Оплата наличными",
+            writeToUs: "Напишите нам",
         },
         placeholder: {
             name: "Имя*",
@@ -128,6 +139,7 @@ const t = {
             house: "Дом*",
             flat: "Квартира*",
             comment: "Коментарий",
+            message: "Сообщение",
         },
     }, 
     orderReceivedPage: {

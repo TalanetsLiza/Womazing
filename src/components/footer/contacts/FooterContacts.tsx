@@ -6,9 +6,9 @@ const FooterContacts: React.FC = () => {
     return (
         <div className={styles.container}>
             <a className={styles.phone} href="tel:+79175105759">
-                {t.contacts.phone}
+                {t.contacts.phone.number}
             </a>
-            {t.contacts.email}
+            {t.contacts.email.addres}
         </div>
     );
 };

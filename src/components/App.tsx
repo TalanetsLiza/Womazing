@@ -20,7 +20,7 @@ const App: React.FC = () => {
                 <Header />
                 <Routes>
                     <Route path={pageUrls.home} element={<Home />} />
-                    <Route path={pageUrls.shop} element={<Shop />} />
+                    <Route path={`${pageUrls.shop}`} element={<Shop />} />
                     <Route path={`${pageUrls.product}/:id`} element={<ProductPage />} />
                     <Route path={pageUrls.about} element={<About />} />
                     <Route path={pageUrls.contacts} element={<Contacts />} />
@@ -32,7 +32,6 @@ const App: React.FC = () => {
             <div className={styles.footer}>
                 <Footer />
             </div>
-            
         </>
     );
 };

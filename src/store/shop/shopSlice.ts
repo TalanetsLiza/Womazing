@@ -1,11 +1,20 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import ProductCategoryType from "../../types/product/ProductCategoryType";
 import ProductType from "../../types/product/ProductType";
 import RequestStatusType from "../../types/requestStatus/RequestStatusType";
 
-export const fetchShop = createAsyncThunk(
+type FetchShopParamsType = undefined | {
+    category?: ProductCategoryType,
+}
+
+export const fetchShop = createAsyncThunk<ProductType[], FetchShopParamsType>(
     "shop/fetchShop",
-    async () => {
-        const responce = await fetch("http://localhost:3001/shop");
+    async (params) => {
+        let url = "http://localhost:3001/shop";
+        if (params?.category) {
+            url += `?categories_like=${params.category}`;
+        }
+        const responce = await fetch(url);
         return await responce.json();
     },
 );

@@ -1,3 +1,5 @@
+import ProductCategoryType from "./ProductCategoryType";
+
  export type SizeType = "S" | "M" | "L" | "XL" | "XXL";
 
 interface ProductType {
@@ -13,6 +15,7 @@ interface ProductType {
     colors: string[],
     relatedItems: number[],
     newCollection?: boolean,
+    categories: ProductCategoryType[],
 }
 
 export default ProductType;

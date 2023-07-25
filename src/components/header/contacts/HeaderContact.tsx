@@ -10,7 +10,7 @@ const HeaderContact: React.FC = () => {
                 <CallingIcon />
             </div>
             <a className={styles.phone} href="tel:+79175105759">
-                {t.contacts.phone}
+                {t.contacts.phone.number}
             </a>
         </div>
     );
