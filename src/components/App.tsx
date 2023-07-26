@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import pageUrls from "../constants/pageUrls";
 import styles from "./App.module.scss";
 import Footer from "./footer/Footer";
@@ -14,6 +14,12 @@ import ProductPage from "./pages/product/ProductPage";
 import Shop from "./pages/shop/Shop";
 
 const App: React.FC = () => {
+    const { pathname, search } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [pathname, search]);
+
     return (
         <>
             <div className={styles.container}>

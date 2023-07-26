@@ -42,6 +42,10 @@ const Shop: React.FC = () => {
         setPage(1);
     }, [category]);
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [page]);
+
     const pageCount = Math.ceil(total / limit);
     const visibleCount = shopData.length;
 
