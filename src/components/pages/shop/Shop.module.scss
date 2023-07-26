@@ -14,3 +14,16 @@
     letter-spacing: 0.34px;
     margin: 40px 0;
 }
+
+@media (max-width: 809px) {
+    .count{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 510px) {
+    .count{
+        margin: 20px 0;
+    }
+}
