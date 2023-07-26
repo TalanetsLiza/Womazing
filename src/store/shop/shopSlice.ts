@@ -3,32 +3,47 @@ import ProductCategoryType from "../../types/product/ProductCategoryType";
 import ProductType from "../../types/product/ProductType";
 import RequestStatusType from "../../types/requestStatus/RequestStatusType";
 
-type FetchShopParamsType = undefined | {
+type FetchShopParamsType = {
     category?: ProductCategoryType,
+    page: number,
+    limit: number,
+}
+type FetchShopResultType = {
+    data: ProductType[],
+    total: number,
 }
 
-export const fetchShop = createAsyncThunk<ProductType[], FetchShopParamsType>(
+export const fetchShop = createAsyncThunk<FetchShopResultType, FetchShopParamsType>(
     "shop/fetchShop",
     async (params) => {
-        let url = "http://localhost:3001/shop";
+        let url = `http://localhost:3001/shop?_page=${params.page}&_limit=${params.limit}`;
         if (params?.category) {
-            url += `?categories_like=${params.category}`;
+            url += `&categories_like=${params.category}`;
         }
         const responce = await fetch(url);
-        return await responce.json();
+        const data = await responce.json();
+        const total = +(responce.headers.get("X-Total-Count") ?? 0);
+
+        return {
+            data,
+            total,
+        };
     },
 );
 
 interface StateType {
     data: ProductType[],
+    total: number,
     status: RequestStatusType,
     error: string | null,
 }
 
 const initialState: StateType = {
     data: [],
+    total: 0,
     status: "",
     error: null,
+
 };
 
 const shopSlice = createSlice({
@@ -41,7 +56,8 @@ const shopSlice = createSlice({
         });
         builder.addCase(fetchShop.fulfilled, (state, action) => {
 			state.status = "success";
-			state.data = action.payload;
+			state.data = action.payload.data;
+            state.total = action.payload.total;
 		});
 		builder.addCase(fetchShop.rejected, (state, action) => {
 			state.status = "failed";

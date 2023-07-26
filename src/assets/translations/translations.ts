@@ -147,6 +147,13 @@ const t = {
         title: "Заказ успешно оформлен",
         description: "Мы свяжемся с вами в ближайшее время!",
     },
+    shopPage: {
+        count: {
+            shown: "Показано",
+            from: "из",
+            products: "товаров",
+        },
+    }
 };
 
 export default t;
