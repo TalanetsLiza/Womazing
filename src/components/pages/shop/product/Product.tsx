@@ -25,7 +25,8 @@ const Product: React.FC<PropsType> = ({
                     alt={dataItem.image.alt}
                 />
                 <div className={styles.productHover}>
-                    <ArrowRight />
+                    <div className={styles.productHoverBackground} />
+                    <ArrowRight className={styles.productHoverIcon}/>
                 </div>
             </div>
             
